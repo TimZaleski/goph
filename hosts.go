@@ -111,5 +111,5 @@ func AddKnownHost(host string, remote net.Addr, key ssh.PublicKey, knownFile str
 
 // DefaultKnownHostsPath returns default user knows hosts file.
 func DefaultKnownHostsPath() (string, error) {
-	return fmt.Sprintf("root/.ssh/known_hosts"), nil
+	return fmt.Sprintf("/root/.ssh/known_hosts"), nil
 }
